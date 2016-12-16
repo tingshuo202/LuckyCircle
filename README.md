@@ -1,4 +1,6 @@
 # LuckyCircle
+
+![image](https://github.com/tingshuo202/LuckyCircle/blob/master/app/img/84EF641B-4C48-4DCB-88BF-17DCE3CC21EF.png )  
 使用surfaceview绘制实现转动的抽奖转盘。
 view是在ui线程中进行绘制，surfaceview是在子线程中进行绘制，避免造成ui线程的阻塞。surfaceview中，通过getHolder方法获取SurfaceHolder，再获取canvas，绘制抽奖转盘。生命周期：
 surfaceCreated（初始化画笔，开启子线程进行绘制）、surfaceChanged、surfaceDestroyed。绘制过程中，需要对圆盘背景、不同的盘块、奖品文字和奖品图片分别进行绘制。
